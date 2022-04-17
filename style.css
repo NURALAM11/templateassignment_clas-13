@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1240px;
+    margin: auto;
+}
+
+/* Header_Banner */
+.header_banner {
+    background-image: url(./img/headerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 10px;
+    padding-bottom: 200px;
+}
+
+.header_section {
+    padding: 10px 0px;
+}
+
+.header_section .logo {
+    display: inline-block;
+    width: 30%;
+}
+
+.header_section .logo img {
+    width: 150px;
+    height: auto;
+}
+
+.header_section .menu {
+    width: 69%;
+    display: inline-block;
+    text-align: center;
+}
+
+.header_section .menu ul {}
+
+.header_section .menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    list-style: none;
+    font-family: arial;
+}
+
+.header_section .menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+    padding: 10px 5px;
+    font-size: 20px;
+    transition: .4s;
+}
+
+/* hover efect */
+.header_section .menu ul li a:hover {
+    color: #f3664d;
+}
+
+.banner_section {
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+
+.banner_section h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 45px;
+    padding: 50px 0px 0px 40px;
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+
+}
+
+/* before & after */
+.banner_section h1::before {
+    content: "\f10d";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 700;
+    color: #ef664d;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+
+.banner_section h1::after {
+    content: "\f10e";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 700;
+    color: #ef664d;
+    position: absolute;
+    top: 25px;
+
+}
+
+/* about_section */
+.about_section {
+    margin-bottom: 30px;
+}
+
+.about_section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0px;
+
+}
+
+.about_items {
+    width: 80%;
+    margin: auto;
+
+}
+
+.about_items .about_picture {
+    width: 20%;
+    display: inline-block;
+    box-shadow: 5px 5px 20px 5px gray;
+    margin-top: 30px;
+
+
+}
+
+.about_items .about_picture img {
+    width: 200px;
+    border: 2px solid #ef664d;
+    display: inline-block;
+    margin-bottom: -4px;
+
+
+
+}
+
+.about_content {
+    width: 60%;
+    display: inline-block;
+    margin-left: 100px;
+
+}
+
+.about_content p {}
+
+/* service section */
+.service_section {
+    background-color: #2e3e4e;
+    padding-top: 50px;
+}
+
+.service_header {
+    text-align: center;
+}
+
+.service_header h1 {
+    color: #ef664d;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.service_box {
+    text-align: center;
+}
+
+.service_box .service_item {
+    width: 33%;
+    display: inline-block;
+}
+
+.service_box .service_item span {
+    background-color: #ef664d;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 5px 15px;
+    font-weight: 700;
+}
+
+.service_box .service_item h3 {
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+    font-family: arial;
+    padding-top: 20px;
+}
+
+.service_box .service_item ul {
+    padding-top: 20px;
+    line-height: 30px;
+    color: white;
+    font-family: arial;
+}
+
+.service_box .service_item ul li {
+    list-style: none;
+}
+
+.service_box .service_item ul li::before {
+    content: "\f560";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 700;
+    padding-right: 5px;
+    color: #ef664d;
+}
+
+/* btn one */
+.service_box .service_item .btn_one {
+    background-color: #ef664d;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px black;
+    position: relative;
+}
+
+.service_box .service_item .btn_one:hover {
+    color: black;
+    z-index: 1;
+    transition: .5s;
+}
+
+.service_box .service_item .btn_one::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service_box .service_item .btn_one:hover::before {
+    width: 100%
+}
+
+/* btn_two */
+.service_box .service_item .btn_two {
+    background-color: #ef664d;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px black;
+    position: relative;
+}
+
+.service_box .service_item .btn_two:hover {
+    color: black;
+    z-index: 1;
+    transition: .5s;
+}
+
+.service_box .service_item .btn_two::before {
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service_box .service_item .btn_two:hover::before {
+    height: 100%;
+}
+
+/* btn three */
+.service_box .service_item .btn_three {
+    background-color: #ef664d;
+    padding: 10px 25px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px black;
+    position: relative;
+}
+
+.service_box .service_item .btn_three:hover {
+    color: black;
+    z-index: 1;
+    transition: .5s;
+}
+
+.service_box .service_item .btn_three::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service_box .service_item .btn_three:hover::before {
+    width: 100%
+}
+
+/* contact section */
+.contact_section {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.contact_heading {}
+
+.contact_heading h2 {
+    font-weight: 200;
+}
+
+.input_filed:focus {
+    outline: none;
+}
+
+.input_filed input {
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid #ef664d;
+    margin-top: 50px;
+}
+
+.submit_btn {
+    width: 250px;
+    margin-top: 30px;
+    background-color: #ef664d;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    z-index: 1;
+
+
+
+}
+
+.submit_btn::before {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #6b1d05;
+    border-radius: 4px;
+    transition: .5s;
+    z-index: -1;
+
+}
+
+.submit_btn:hover::before {
+    width: 50%;
+}
+
+.submit_btn::after {
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #6b1d05;
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.submit_btn:hover::after {
+    width: 50%;
+}
+
+
+
+
+
+
+
+/* footer section */
+.footer_section {
+    background-color: #2e3e4e;
+}
+
+.footer_section p {
+    color: white;
+    font-size: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+span {
+    height: 3px;
+    width: 2px;
+    border: 1px solid white;
+    margin: 0px 5px;
+}
+
+.footer_section p::after {
+    content: " Template Stock";
+    color: #ef664d;
+}
